@@ -8,7 +8,7 @@ class Home extends React.Component {
     return (
       <div>
           <h1>{this.props.startupName}</h1>
-          <Navigation />
+          <Navigation navs={this.props.navs} />
           <Body />
       </div>
     );

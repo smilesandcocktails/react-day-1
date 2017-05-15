@@ -4,8 +4,15 @@ import ReactDOM from 'react-dom';
 import Home from './components/home/Home'
 import './index.css';
 
+
+const navList = [
+  'Home',
+  'About',
+  'FAQ'
+]
+
 ReactDOM.render(
-  <Home startupName={"Cara"} />,
+  <Home startupName={"Cara"} navs={navList} />,
   document.getElementById('root')
 );
 
